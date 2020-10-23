@@ -1,0 +1,10 @@
+<script>  
+    navigator.geolocation.getCurrentPosition(successCallback);  
+    function successCallback(position){  
+        var msg='';  
+        for(var prop in position.coords){  
+            msg+=prop+':'+position.coords[prop]+'\n';  
+        }  
+        alert(msg);  
+    }  
+</script>  
